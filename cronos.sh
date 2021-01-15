@@ -30,6 +30,7 @@ CR_AIK=$CR_DIR/Cronos/A.I.K
 # Main Ramdisk Location
 CR_RAMDISK=$CR_DIR/Cronos/Ramdisk
 CR_RAMDISK_Q=$CR_DIR/Cronos/Q
+CR_RAMDISK_TREBLE=$CR_DIR/Cronos/Treble
 # Compiled image name and location (Image/zImage)
 CR_KERNEL=$CR_DIR/arch/arm64/boot/Image
 # Compiled dtb by dtbtool
@@ -304,7 +305,7 @@ BUILD_VAR(){
 		CR_CONFIG_VAR=$CR_CONFIG_TREBLE
 		CR_VARIANT=$CR_VARIANT-Treble
 		CR_DTB_MOUNT=$CR_DTS_TREBLE
-		CR_RAMDISK=$CR_RAMDISK_Q
+		CR_RAMDISK=$CR_RAMDISK_TREBLE
 		CR_PERMISSIVE="1"
 	fi
 	if [ $CR_VAR = "4" ]; then
